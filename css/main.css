@@ -1,0 +1,438 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  background-color: #FFEFE7;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.active {
+  fill: #FA9500;
+}
+
+nav {
+  width: 88%;
+  min-width: 320px;
+  height: 135px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1;
+  align-items: center;
+  color: #7C6A0A;
+}
+nav .navbar__title h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 3.9rem;
+}
+nav .navbar__icons {
+  justify-self: end;
+}
+nav .navbar__icons li {
+  display: inline-block;
+  list-style: none;
+  padding-left: 20px;
+}
+nav .navbar__icons li svg {
+  width: 36px;
+  height: 36px;
+}
+nav .navbar__icons li svg:hover {
+  transform: rotate(20deg);
+  transition: 2s ease;
+}
+
+main {
+  width: 88%;
+  height: auto;
+  min-width: 320px;
+  margin: 0 auto;
+}
+main .presentation__section {
+  height: 686px;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: 1;
+  align-items: center;
+  color: #7C6A0A;
+}
+main .presentation__section .presentation__section-info {
+  margin: 0 30px 0 20px;
+}
+main .presentation__section .presentation__section-info h1 {
+  margin-bottom: 45px;
+  font-size: 6rem;
+  font-weight: 600;
+  line-height: 7.8rem;
+}
+main .presentation__section .presentation__section-info p {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 3.25rem;
+}
+main .presentation__section .presentation__section-info a {
+  display: inline-block;
+  width: 261px;
+  height: 63px;
+  background-color: #FA9500;
+  padding-top: 15px;
+  margin-top: 65px;
+  font-size: 2.3rem;
+  font-weight: 700;
+  line-height: 2.929rem;
+  color: white;
+  text-align: center;
+  border-radius: 35px;
+}
+main .presentation__section .presentation__section-img img {
+  width: 100%;
+  height: 100%;
+  max-height: 686px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .product__section {
+  margin-top: 30px;
+  color: #7C6A0A;
+}
+main .product__section h2 {
+  font-size: 5rem;
+  font-weight: 400;
+  line-height: 6.5rem;
+}
+main .product__section .healthcare__container, main .product__section .furniture__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 30px 0;
+}
+main .product__section .healthcare__container-item, main .product__section .furniture__container-item {
+  width: 320px;
+  height: 500px;
+  padding: 10px 0;
+  margin-bottom: 30px;
+  margin-right: 15px;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 1fr 8fr 4fr;
+  background-color: #FFDAC6;
+}
+main .product__section .healthcare__container-item svg, main .product__section .furniture__container-item svg {
+  justify-self: end;
+  margin-right: 20px;
+  cursor: pointer;
+}
+main .product__section .healthcare__container-item svg:hover, main .product__section .furniture__container-item svg:hover {
+  fill: #FA9500;
+  transform: rotate(20deg) scale(2);
+  transition: 2s ease;
+}
+main .product__section .healthcare__container-item img, main .product__section .furniture__container-item img {
+  width: 240px;
+  height: 300px;
+  margin: 0 auto;
+  border-radius: 6.51px;
+}
+main .product__section .healthcare__container-item .item-text, main .product__section .furniture__container-item .item-text {
+  margin: 20px 40px;
+}
+main .product__section .healthcare__container-item h3, main .product__section .furniture__container-item h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 3.25rem;
+}
+main .product__section .healthcare__container-item p, main .product__section .furniture__container-item p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.95rem;
+}
+main .product__section .furniture__container-item {
+  background-color: #BABD8D;
+}
+main .info__section {
+  height: auto;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 3;
+  color: #7C6A0A;
+  margin-bottom: 80px;
+}
+main .info__section h2 {
+  font-size: 5rem;
+  font-weight: 500;
+  line-height: 6.5rem;
+  margin-bottom: 50px;
+}
+main .info__section .about__us .about__us-info {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 1;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+main .info__section .about__us .info-ticket {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .info__section .about__us .info-ticket p {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 3.9rem;
+  color: #E86424;
+}
+main .info__section .about__us .info-ticket img {
+  width: 164px;
+  height: 164px;
+}
+main .info__section .galery .galery-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+main .info__section .galery .galery-container img {
+  width: 350px;
+  height: 350px;
+  border-radius: 16px;
+}
+main .info__section .location iframe {
+  width: 100%;
+  height: 600px;
+}
+main .info__section .location figcaption {
+  margin-top: 30px;
+}
+main .info__section .location figcaption {
+  font-weight: 400;
+  color: #E86424;
+}
+main .info__section .location figcaption h3 {
+  font-size: 3.5rem;
+  line-height: 4.55rem;
+}
+main .info__section .location figcaption p {
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+}
+
+footer {
+  width: 100%;
+  height: 461px;
+  background-color: #FA9500;
+}
+footer .footer__container {
+  width: 88%;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+footer .footer__container h3 {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 3.9rem;
+  margin-bottom: 40px;
+}
+footer .footer__container p {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2.6rem;
+  margin-bottom: 30px;
+}
+footer .footer_images-networking {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+footer .footer_images-networking img {
+  width: 45px;
+  height: 45px;
+  margin-top: 90px;
+  margin-right: 20px;
+}
+
+@media (max-width: 767px) {
+  nav {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  nav .navbar__title h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 3.9rem;
+    text-align: center;
+  }
+  nav .navbar__icons {
+    justify-self: center;
+  }
+  main {
+    width: 88%;
+    min-width: 320px;
+  }
+  main .presentation__section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+  }
+  main .presentation__section .presentation__section-info {
+    margin: 0 10px 0 10px;
+    grid-row: 2;
+  }
+  main .presentation__section .presentation__section-info h1 {
+    margin-bottom: 10px;
+    font-size: 2.8rem;
+    line-height: 3.64rem;
+  }
+  main .presentation__section .presentation__section-info p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.56rem;
+  }
+  main .presentation__section .presentation__section-info a {
+    width: 150px;
+    height: 40px;
+    padding-top: 5px;
+    margin-top: 15px;
+    font-size: 1.3rem;
+    line-height: 2.929rem;
+  }
+  main .product__section {
+    margin-top: 60px;
+  }
+  main .product__section h2 {
+    font-size: 2.7rem;
+    font-weight: 700;
+    line-height: 2.68rem;
+    text-align: center;
+  }
+  main .product__section .healthcare__container, main .product__section .furniture__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 30px 0;
+  }
+  main .product__section .healthcare__container-item, main .product__section .furniture__container-item {
+    width: 300px;
+    margin-right: 10px;
+    border-radius: 8px;
+    background-color: #FFDAC6;
+  }
+  main .product__section .healthcare__container-item img, main .product__section .furniture__container-item img {
+    width: 240px;
+    height: 300px;
+    margin: 0 auto;
+    border-radius: 6.51px;
+  }
+  main .product__section .healthcare__container-item .item-text, main .product__section .furniture__container-item .item-text {
+    margin: 20px 40px;
+  }
+  main .product__section .healthcare__container-item h3, main .product__section .furniture__container-item h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 3.25rem;
+  }
+  main .product__section .healthcare__container-item p, main .product__section .furniture__container-item p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.95rem;
+  }
+  main .product__section .furniture__container-item {
+    background-color: #BABD8D;
+  }
+  main .info__section h2 {
+    font-size: 2.9rem;
+    font-weight: 700;
+    line-height: 2.68rem;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  main .info__section .about__us .about__us-info {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr 1fr;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  main .info__section .about__us .info-ticket p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+  }
+  main .info__section .about__us .info-ticket img {
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+  }
+  main .info__section .galery .galery-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+  main .info__section .galery .galery-container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 16px;
+  }
+  main .info__section .location iframe {
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+  }
+  main .info__section .location figcaption {
+    margin-top: 10px;
+    text-align: center;
+  }
+  main .info__section .location figcaption h3 {
+    font-size: 2rem;
+    line-height: 2.6rem;
+  }
+  main .info__section .location figcaption p {
+    font-size: 1.5rem;
+    line-height: 1.95rem;
+  }
+  footer {
+    width: 100%;
+    height: 461px;
+    background-color: #FA9500;
+  }
+  footer .footer__container {
+    width: 88%;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+  footer .footer__container h3 {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 3.9rem;
+    margin-bottom: 40px;
+  }
+  footer .footer__container p {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.6rem;
+    margin-bottom: 30px;
+  }
+  footer .footer__container h3 {
+    font-size: 2.1rem;
+  }
+  footer .footer__container p {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+  footer .footer_images-networking img {
+    width: 26px;
+    height: 26px;
+  }
+}/*# sourceMappingURL=main.css.map */
